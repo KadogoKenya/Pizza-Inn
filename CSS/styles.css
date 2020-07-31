@@ -1,5 +1,5 @@
 .landingPage{
-    background-image: url("/Images/background/backg.jpg");
+    background-image: url("../Images/background/backg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -77,4 +77,11 @@
 }
 .card>p{
     display: none;
+}
+.map{
+    margin-top: 2%;
+    
+}
+.navbar{
+    background-color: coral;
 }
