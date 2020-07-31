@@ -42,6 +42,7 @@
 .about{
     padding-left: 20%;
     padding-right: 20%;
+    font-size: larger;
 }
 .about>h3{
     font-weight: bold;
@@ -69,4 +70,8 @@
     margin-top: 3%;
     padding-right: 1%;
     padding-left: 1%;
+}
+.social-media{
+    margin-top: 2%;
+    align-content: center;
 }
