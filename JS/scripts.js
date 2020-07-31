@@ -1,4 +1,8 @@
 $(document).ready(function(){
-    $(".card").show();
-    $()
+    $('.card').click(function(){
+        $('describe').show();
+    });
+      $('desscribe').click(function(){
+        $('#imgDiv').hide();
+    });
 })
