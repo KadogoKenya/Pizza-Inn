@@ -64,24 +64,38 @@
                 <h3>Plan your meal visit</h3>
                 <div>
                 <form>
-                    <p>Please select size of pizza to:</p>
-                        <input type="radio" id="Vsmall" name="SIZE" value="Small">
-                        <label for="Small">Small</label><br>
-                        <input type="radio" id="Vmedium" name="SIZE" value="Medium">
-                        <label for="Medium">Medium</label><br>
-                        <input type="radio" id="Vlarge" name="SIZE" value="Large">
-                        <label for="Large">Large</label>
+                    <div class="form-row">
+                        <div class="col">
+                            <p>Please select size of pizza to:</p>
+                                <input type="radio" id="Vsmall" name="SIZE" value="Small">
+                                <label for="Small">Small</label><br>
+                                <input type="radio" id="Vmedium" name="SIZE" value="Medium">
+                                <label for="Medium">Medium</label><br>
+                                <input type="radio" id="Vlarge" name="SIZE" value="Large">
+                                <label for="Large">Large</label><br>
+                        </div>
+                        <div class="col">   
 
-                        <br>  
+                            <p>Please select Crust on your pizza:</p>
+                                <input type="radio" id="crispy" name="crust" value="Crispy">
+                                <label for="crispy">Crispy</label><br>
+                                <input type="radio" id="stuffed" name="crust" value="Stuffed">
+                                <label for="stuffed">Stuffed</label><br>  
+                                <input type="radio" id="glutten-free" name="crust" value="Glutten-free">
+                                <label for="glutten-free">Glutten Free</label><br><br>
+                        </div>
+                        <div class="col">
 
-                    <p>Please select Crust on your pizza:</p>
-                        <input type="radio" id="crispy" name="crust" value="Crispy">
-                        <label for="crispy">Crispy</label><br>
-                        <input type="radio" id="stuffed" name="crust" value="Stuffed">
-                        <label for="stuffed">Stuffed</label><br>  
-                        <input type="radio" id="glutten-free" name="crust" value="Glutten-free">
-                        <label for="glutten-free">Glutten Free</label><br><br>
-                        <input type="submit" value="Submit">
+                            <p>Please select toppings on your Pizza:</p>
+                                <input type="radio" id="tomato" name="topping" value="Tomato">
+                                <label for="Small">Tomato</label><br>
+                                <input type="radio" id="cheese" name="topping" value="Cheese">
+                                <label for="Medium">Cheese</label><br>
+                                <input type="radio" id="chicken" name="topping" value="Chiken">
+                                <label for="Large">Chicken or Ham</label><br><br>
+                        </div>
+                        </div>
+                        <input type="submit" class="btn btn-danger" value="Order">
                     
                 </form>
                 </div>
