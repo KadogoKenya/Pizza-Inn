@@ -49,9 +49,13 @@
 .sizes{
     font-size: larger;
 }
-.visit{
-    align-self: center;
-}
 .visit>h3{
+    align-self: center;
+    text-align: center;
+    font-size: 200;
+    font-weight: bold;
+}
+.visit{
     align-content: center;
+    font-size: large;
 }
