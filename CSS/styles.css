@@ -1,0 +1,48 @@
+.landingPage{
+    background-image: url("/Images/background/backg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    align-items: baseline;
+    padding: 500px;
+    color: black;
+    font-size: larger;
+    margin-top: 20px;
+    font-weight: 200;
+    image-resolution: 50;
+}
+.landingPage>p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+.landingPage>h1{
+    padding: 0;
+}
+.Description{
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 4%;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    
+}
+.Description>h3{
+    align-self: center;
+    text-align: center;
+    font-weight: bold;
+}
+.Description>p{
+    /* font-size: large; */
+    line-height: normal;
+}
+.about{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.about>h3{
+    font-weight: bold;
+}
