@@ -21,10 +21,14 @@
 .landingPage>h1{
     padding: 0;
 }
+body{
+    padding-left: 5%;
+    padding-right: 5%;
+}
 .Description{
     padding-left: 20%;
     padding-right: 20%;
-    margin-top: 4%;
+    margin-top: 1%;
     font-weight: 200;
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
@@ -67,19 +71,22 @@
     font-size: medium;
 }
 .container{
-    margin-top: 3%;
+    margin-top: 0%;
     padding-right: 1%;
     padding-left: 1%;
 }
+.card-deck{
+    padding-bottom: 0%;
+}
 .social-media{
-    margin-top: 2%;
+    margin-top: 3%;
     align-content: center;
 }
 .card>p{
     display: none;
 }
 .map{
-    margin-top: 2%;
+    margin-top: 1%;
     
 }
 .navbar{
