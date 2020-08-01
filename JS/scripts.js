@@ -1,4 +1,5 @@
 function getConfirmation() {
+   
     var retVal = confirm("Do you want to continue ?");
     if( retVal == true ) {
         let backele=document.getElementById("#meals")
