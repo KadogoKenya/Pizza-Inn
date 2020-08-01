@@ -3,7 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    height: 100vh;
+    height: 60vh;
     width: 100%;
     align-items: baseline;
     padding: 500px;
@@ -84,4 +84,17 @@
 }
 .navbar{
     background-color: coral;
+}
+body{
+    background-color: coral;
+}
+.sizes, .topping, .crust, .amount{
+    color: white;
+    font-size: larger;
+    font-weight: 200;
+    align-self: center;
+}
+.form{
+    padding-left: 30%;
+    padding-right: 30%;
 }
