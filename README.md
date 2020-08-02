@@ -1,4 +1,4 @@
-# DELANI STUDIO
+# Pizza Inn
 ## Table of contents.
 - General information.
 - Introduction
