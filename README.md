@@ -18,9 +18,9 @@ This project is a combination of skills from HTNL,CSS,JS and JQuery. it uses fun
 ## Prerequisites.
 Before you continue with this project, make sure you have...
 
-## Installed all the required tools.
+- Installed all the required tools.
 Basic knowledge in HTML, CSS,JQuerry and JS.
-# Technologies
+## Technologies
 This project is creadted with the use of
 
 - HTML
