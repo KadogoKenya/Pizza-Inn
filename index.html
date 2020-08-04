@@ -16,6 +16,9 @@
         <div>
             <nav class="navbar navbar-expand-sm navbar-dark" style="background: coral;">
                 <a class="navbar-brand" href="#">Cart</a>
+            <nav class="navbar navbar-expand-sm navbar-dark" style="background: rgb(240, 153, 121);">
+                <a class="navbar-brand" href="#">Cart</a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button> 
@@ -42,6 +45,8 @@
                 </nav>
         </div>
         <div class="container-fluid">
+                </div>	
+
             <div class="landingPage align-content-center justify-content-center">
                 <h1>JOYS PIZZA INN</h1> 
                     <!-- <img src="./Images/background/backg.jpg"> -->
@@ -89,164 +94,97 @@
                     </ul>
                 </P>
             </div>
-            <div class="visit">
+            <div id="meals" class="visit align-content-center justify-content-center">
                 <h3>Plan your meal visit</h3>
-                <div>
-                <form>
-                    <div class="form-row">
-                        <div class="col">
-                            <p>Please select size of pizza to:</p>
-                                <input type="radio" id="Vsmall" name="SIZE" value="Small">
-                                <label for="Small">Small</label><br>
-                                <input type="radio" id="Vmedium" name="SIZE" value="Medium">
-                                <label for="Medium">Medium</label><br>
-                                <input type="radio" id="Vlarge" name="SIZE" value="Large">
-                                <label for="Large">Large</label><br>
-                        </div>
-                        <div class="col">   
-
-                            <p>Please select Crust on your pizza:</p>
-                                <input type="radio" id="crispy" name="crust" value="Crispy">
-                                <label for="crispy">Crispy</label><br>
-                                <input type="radio" id="stuffed" name="crust" value="Stuffed">
-                                <label for="stuffed">Stuffed</label><br>  
-                                <input type="radio" id="glutten-free" name="crust" value="Glutten-free">
-                                <label for="glutten-free">Glutten Free</label><br><br>
-                        </div>
-                        <div class="col">
-
-                            <p>Please select toppings on your Pizza:</p>
-                                <input type="radio" id="tomato" name="topping" value="Tomato">
-                                <label for="Small">Tomato</label><br>
-                                <input type="radio" id="cheese" name="topping" value="Cheese">
-                                <label for="Medium">Cheese</label><br>
-                                <input type="radio" id="chicken" name="topping" value="Chiken">
-                                <label for="Large">Chicken or Ham</label><br><br>
-                        </div>
-                        </div>
-                        <input type="submit" class="btn btn-danger" value="Order">
-                    
-                </form>
-                </div>
-            </div>
-            <div class="container">
-                <div class="card-deck">
-                    <div class="card">
-                        <img src="./Images/footer/footer_1.jpg" class="img-fluid" alt="">
-                            <p>
-                                FOR THE MARINATED TOMATOES<br>
-                                1/3 c. whole fresh basil leaves with stems <br>
-                                attached for easy removal.
-                                FOR PIZZA<br>
-                                4 oz. sliced mozzarella cheese
-                                1/4 c. fresh basil, chopped or finely sliced
-                        </p><br>         
-                        </div>
-                        <div class="card">
-                        <img src="./Images/footer/footer_2.jpg" class="img-fluid" alt="">
-                            <p>
-                                FOR THE MARINATED TOMATOES<br>
-                                1/3 c. whole fresh basil leaves with stems <br>
-                                attached for easy removal.
-                                FOR PIZZA<br>
-                                4 oz. sliced mozzarella cheese
-                                1/4 c. fresh basil, chopped or finely sliced
-                        </p><br>         
-                        </div>
-                        <div class="card">
-                        <img src="./Images/footer/footer_3.jpg" class="img-fluid" alt="">
-                            <p>
-                                FOR THE MARINATED TOMATOES<br>
-                                1/3 c. whole fresh basil leaves with stems <br>
-                                attached for easy removal.
-                                FOR PIZZA<br>
-                                4 oz. sliced mozzarella cheese
-                                1/4 c. fresh basil, chopped or finely sliced
-                        </p><br>         
-                        </div>
-                        <div class="card">
-                        <img src="./Images/footer/footer_4.jpg" class="img-fluid" alt="">
-                            <p>
-                                FOR THE MARINATED TOMATOES<br>
-                                1/3 c. whole fresh basil leaves with stems <br>
-                                attached for easy removal.
-                                FOR PIZZA<br>
-                                4 oz. sliced mozzarella cheese
-                                1/4 c. fresh basil, chopped or finely sliced
-                        </p><br>         
-                        </div>
-                        <div class="card">
-                        <img src="./Images/footer/footer_5.jpg" class="img-fluid" alt="">
-                            <p>
-                                FOR THE MARINATED TOMATOES<br>
-                                1/3 c. whole fresh basil leaves with stems <br>
-                                attached for easy removal.
-                                FOR PIZZA<br>
-                                4 oz. sliced mozzarella cheese
-                                1/4 c. fresh basil, chopped or finely sliced
-                        </p><br>         
+                    <div>
+                        <form>
+                            <div class="form align-content-center justify-content-center">
+                                <div class="sizes">
+                                    <p>Please select size of pizza to:</p>
+                                        <select id="sizes" name="PizaSizes">
+                                            <option value="Small">Small @800</option>
+                                            <option value="Medium">Medium @1000</option>
+                                            <option value="Large">Large @1500</option>
+                                            
+                                        </select>
+                                </div>
+                                <div class="crust">   
+                                    <p>Please select Crust on your pizza:</p>
+                                        <select id="crusts" name="Crust">
+                                            <option value="Crispy">Crispy @150</option>
+                                            <option value="Stuffed">Stuffed @100</option>
+                                            <option value="Glutten-free">Glutten-free @200</option>                                  
+                                        </select>
+                                </div>
+                                <div class="topping">
+                                    <p>Please select toppings on your Pizza:</p>
+                                    
+                                        <input type="checkbox" id="TOMATO" name="tomato" value="Tomato">
+                                        <label for="tomatos">Tomato</label><br>
+                                        <input type="checkbox" id="cheese" name="CHEESE" value="Cheese">
+                                        <label for="cheese"> Cheese/Mozerella Cheese</label><br>
+                                        <input type="checkbox" id="chicken" name="Chicken" value="Ham">
+                                        <label for="HAM">Chicken / Ham</label><br>
+                                </div> <br>
+                        <div class="amount">
+                            <p>Select the number of pizzas to be delivers</p>
+                            <input type="number" id="Pizza" name="pizzas" min="1" max="100">
                         </div>
                         
-                        </p><br>         
-                        </div>
+                        <div><br><br>
+                            <div class="buttons align-content-center jusify-content-center">
+                                <input type="submit" class="btn btn-danger"id="button" onclick="getConfirmation()" value="Order">
+                                <input type="submit" class="btn btn-danger"id="button" value="Checkout">
+                                <input type="submit" class="btn btn-danger"id="button" onclick="Deliver();" value="Deliver">
+                            </div>
+    
+                          </div>
+                        </div>  
+                </form>
+                </div>
 
-                <div class="card-deck mt-20">
+                <div class="container">
+                    <h4 id="pics">Gallery</h4>
+                <div class="card-deck">
                     <div class="card">
-                        <img src="./Images/footer/footer_6.jpg" class="img-fluid" alt="">
-                            <p>
-                                FOR THE MARINATED TOMATOES<br>
-                                1/3 c. whole fresh basil leaves with stems <br>
-                                attached for easy removal.
-                                FOR PIZZA<br>
-                                4 oz. sliced mozzarella cheese
-                                1/4 c. fresh basil, chopped or finely sliced
-                            </p><br>         
+                        <img src="./Images/footer/footer_1.jpg" id="img" class="img-fluid" alt="">
                     </div>
-                    <div class="card">
-                        <img src="./Images/footer/footer_7.jpg" class="img-fluid" alt="">
-                            <p>
-                                FOR THE MARINATED TOMATOES<br>
-                                1/3 c. whole fresh basil leaves with stems <br>
-                                attached for easy removal.
-                                FOR PIZZA<br>
-                                4 oz. sliced mozzarella cheese
-                                1/4 c. fresh basil, chopped or finely sliced
-                            </p><br>         
-                                </div>
-                    <div class="card">
-                        <img src="./Images/footer/footer_8.jpg" class="img-fluid" alt="">
-                            <p>
-                                FOR THE MARINATED TOMATOES<br>
-                                1/3 c. whole fresh basil leaves with stems <br>
-                                attached for easy removal.
-                                FOR PIZZA<br>
-                                4 oz. sliced mozzarella cheese
-                                1/4 c. fresh basil, chopped or finely sliced
-                            </p><br>         
-                    </div>
-                    <div class="card">
-                        <img src="./Images/footer/footer_4.jpg" class="img-fluid" alt="">
-                            <p>
-                                FOR THE MARINATED TOMATOES<br>
-                                1/3 c. whole fresh basil leaves with stems <br>
-                                attached for easy removal.
-                                FOR PIZZA<br>
-                                4 oz. sliced mozzarella cheese
-                                1/4 c. fresh basil, chopped or finely sliced
-                            </p><br>         
-                    </div>
-                    <div class="card">
-                        <img src="./Images/footer/footer_5.jpg" class="img-fluid" alt="">
-                            <p>
-                                FOR THE MARINATED TOMATOES<br>
-                                1/3 c. whole fresh basil leaves with stems <br>
-                                attached for easy removal.
-                                FOR PIZZA<br>
-                                4 oz. sliced mozzarella cheese
-                                1/4 c. fresh basil, chopped or finely sliced
-                            </p><br>         
-                    </div>
-                                         
+                <div class="card">
+                <img src="./Images/footer/footer_2.jpg" id="img" class="img-fluid" alt="">
+                </div>
+                <div class="card">
+                <img src="./Images/footer/footer_3.jpg" id="img" class="img-fluid" alt="">
+                    <div class="describe">
+                    </div>           
+                </div>
+                <div class="card">
+                <img src="./Images/footer/footer_4.jpg" id="img" class="img-fluid" alt="">
+                </div>
+                <div class="card">
+                <img src="./Images/footer/footer_5.jpg" id="img" class="img-fluid" alt="">
+                </div>
+                
+                </p><br>         
+                </div>
+
+        <div class="card-deck mt-20">
+            <div class="card">
+                <img src="./Images/footer/footer_6.jpg" id="img" class="img-fluid" alt="">
+            </div>
+            <div class="card">
+                <img src="./Images/footer/footer_7.jpg" id="img" class="img-fluid" alt="">
+                        </div>
+            <div class="card">
+                <img src="./Images/footer/footer_8.jpg" id="img" class="img-fluid" alt="">
+            </div>
+            <div class="card">
+                <img src="./Images/footer/footer_4.jpg" id="img" class="img-fluid" alt="">
+            </div>
+            <div class="card">
+                <img src="./Images/footer/footer_5.jpg" id="img" class="img-fluid" alt="">
+                   
+            </div>
+                                
                     </div>
                     <!-- google map location -->
                     <div class="map d-flex justify-content-center align-content-center">

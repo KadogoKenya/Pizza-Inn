@@ -1,9 +1,9 @@
 .landingPage{
-    background-image: url("../Images/background/backg.jpg");
+    background-image: url("../Images/background/backg.jpg"),linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7));
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    height: 100vh;
+    height: 60vh;
     width: 100%;
     align-items: baseline;
     padding: 500px;
@@ -21,10 +21,14 @@
 .landingPage>h1{
     padding: 0;
 }
+body{
+    padding-left: 5%;
+    padding-right: 5%;
+}
 .Description{
     padding-left: 20%;
     padding-right: 20%;
-    margin-top: 4%;
+    margin-top: 1%;
     font-weight: 200;
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
@@ -67,21 +71,43 @@
     font-size: medium;
 }
 .container{
-    margin-top: 3%;
+    margin-top: 0%;
     padding-right: 1%;
     padding-left: 1%;
 }
+.card-deck{
+    padding-bottom: 0%;
+}
 .social-media{
-    margin-top: 2%;
+    margin-top: 3%;
     align-content: center;
 }
 .card>p{
     display: none;
 }
 .map{
-    margin-top: 2%;
+    margin-top: 1%;
     
 }
 .navbar{
     background-color: coral;
+}
+body{
+    background-color: coral;
+}
+.sizes, .topping, .crust, .amount{
+    color: white;
+    font-size: larger;
+    font-weight: 200;
+    align-self: center;
+}
+.form{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.container>h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
 }
