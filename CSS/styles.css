@@ -21,31 +21,18 @@
 .landingPage>h1{
     padding: 0;
 }
-body{
-    padding-left: 5%;
-    padding-right: 5%;
-}
-.Description{
-    padding-left: 20%;
-    padding-right: 20%;
-    margin-top: 1%;
-    font-weight: 200;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: larger;
-    
-}
+/
 .Description>h3{
-    /* align-self: center; */
+   
     text-align: center;
     font-weight: bold;
 }
 .Description>p{
-    /* font-size: large; */
+    
     line-height: normal;
 }
 .about{
-    padding-left: 20%;
-    padding-right: 20%;
+    
     font-size: larger;
 }
 .about>h3{
@@ -63,8 +50,6 @@ body{
 .visit{
     align-content: center;
     font-size: large;
-    padding-left: 20%;
-    padding-right: 20%;
 }
 .visit>p{
     font-weight: bold;
@@ -110,4 +95,287 @@ body{
     font-size: larger;
     font-weight: bold;
     font-style: italic;
+}
+
+
+/* UPDATED */
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap');
+
+body {
+    font-family: 'Darker Grotesque', sans-serif;
+    margin: 0%
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card-title {
+    font-size: 19px;
+}
+
+#header {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(227, 217, 191);
+    margin: 0;
+}
+
+.alert-good {
+    background-color: #e9ecef
+}
+
+ul.header__menu li {
+    display: inline;
+    padding: 20px;
+    font-size: 35px;
+
+}
+
+ul.header__menu li a {
+    color: #0f394f;
+}
+
+header {
+    z-index: 2;
+    /* background-color: rgb(227, 217, 191); */
+    /* position: fixed; */
+    top: 0;
+    /* box-shadow: 5px 5px 12px white; */
+    padding: 40px;
+    width: 100%;
+
+}
+
+.welcome {
+    padding-top: 19%;
+}
+
+#intro {
+    padding-top: 80px
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+}
+
+#intro>h1 {
+    color: #0f394f;
+    font-weight: bold;
+    font-family: 'Brix Sans';
+    font-size: 74px !important
+}
+
+.description {
+    float: right;
+    max-width: 400px;
+}
+
+#expectations {
+    margin-top: 13%
+}
+
+#expectations h1 {
+    color: #0f394f;
+    font-weight: bold
+}
+
+#discover {
+    margin-top: 10%;
+    margin-left: 18%;
+    font-size: 200%;
+    color: black;
+    background-color: #f09179;
+}
+
+.badge-cash {
+    background: #f09179;
+}
+
+#discover:hover {
+    margin-top: 10%;
+    margin-left: 18%;
+    font-size: 200%;
+    color: #fff;
+    background-color: #0f394f;
+}
+
+.view-basket {
+    color: black;
+    background-color: #f09179;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.view-basket:hover {
+    color: #fff;
+    background-color: #0f394f;
+}
+
+.mbadge {
+    height: 2px;
+}
+
+#scroll,
+.mbadge {
+
+    display: none;
+}
+
+table {
+    font-size: 26px;
+}
+
+.big {
+    width: 1.5em;
+
+    height: 1.5em;
+}
+
+#dev,
+#ifDelivered,
+#total {
+    display: none
+}
+
+label {
+    font-size: 29px;
+    margin-left: 15px;
+}
+.payments{
+    padding: 80px;
+}
+.modal-title,
+.modal {
+    font-size: 25px;
+}
+
+.modal-footer>button {
+    text-transform: uppercase;
+    font-weight: bolder
+}
+#more-info{
+    margin-top: 40px;
+}
+
+#pizza_basket,
+#note,
+.msucess-alert,
+.pizzabtn,
+.method{
+    display: none;
+}
+
+input#qnty {
+    max-width: 30%;
+    text-align: center;
+    background-color: #bee5eb;
+    /* border: none; */
+}
+
+#pizza_basket {
+    margin: 5%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #intro>h1 {
+        color: #0f394f;
+        font-weight: bold;
+        font-family: 'Brix Sans';
+        text-align   : center;
+        text-justify: justify;
+        font-size: 35px !important
+    }
+
+    .description {
+        max-width: 100%;
+        float: left;
+        font-size: 25px;
+    }
+
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #intro>h1 {
+        color: #0f394f;
+        font-weight: bold;
+        font-family: 'Brix Sans';
+        text-align: center;
+        float: right;
+        text-justify: justify;
+        font-size: 78px !important
+    }
+
+    .description {
+        max-width: 100%;
+
+    }
+
+    .pImage {
+        margin-right: 50%;
+        align-content: center;
+       
+    }
+
+    .description {
+        float: left;
+        font-size: 40px !important
+    }
+
+    #discover {
+        align-content: center;
+
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+    #intro>h1 {
+        color: #0f394f;
+        font-weight: bold;
+        font-family: 'Brix Sans';
+        text-align: center;
+        text-justify: justify;
+        
+        font-size: 38px !important
+    }
+    .welcome, #intro{
+        padding: 0%; 
+    
+    }
+    .description {
+        float: left;
+        font-size: 21px;
+    }
+
+    #discover,
+    ul.header__menu li {
+        display: none;
+
+    }
+
+    #scroll {
+        text-align: center;
+        position: relative;
+        left: 50%;
+        display: block;
+    }
+
+    .view-basket {
+        display: block;
+    }
+
+    .pImage{
+       display: none;
+    }
+}
+
+@media  screen and (max-width: 1366px) {
+    
 }

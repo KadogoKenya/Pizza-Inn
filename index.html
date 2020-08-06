@@ -63,25 +63,7 @@
                 The gracious Segera House and Villa Segera boast even greater privacy and luxury. The main area comprises the 
                 Paddock House, Wine Tower and renovated stables, complete with bar and dining room filled with art.<br>
             </p>
-            <p>
-                The essence of Segera is as a retreat to relax and indulge either before or after you go on your safari. 
-                Wildlife is almost a secondary part of the experience. The retreat, owned by Jochen Zeitz is very much inspired 
-                by a focus on contemporary art and ideas. Use this as a base to explore the Northern Frontier by Helicopter or simply 
-                to relax, recover from jetlag or enjoy your last moments of your holiday before returning home, fully refreshed.<br><br>
-            </p>
-            <p>
-                Dining is an experience in itself, created by talented local chefs who deliver 
-                culinary magic using organic, locally grown and free range produce. Each meal is served 
-
-                in a different part of the retreat.<br><br>
-            </p>
-            <p>
-                Guests at Pizza-Inn can pick from a long list of entertainment, from classic safari game drives to 
-                enriching community visits, guided game walks and indulgent spa treatments.  For the adventurous, 
-                this is ideal for helicopter safari’s or a sleep-out experience in their Nay Palad Birds Nest 
-                – well worth the additional cost.
-            </p>
-        </div>
+           
             <div class="about">
                 <h3>What we love about Joys Pizza Inn</h3>
                 <P>
@@ -93,122 +75,510 @@
                     </ul>
                 </P>
             </div>
-            <div id="meals" class="visit align-content-center justify-content-center">
-                <h3>Plan your meal visit</h3>
-                    <div>
-                        <form>
-                            <div class="form align-content-center justify-content-center">
-                                <div class="sizes">
-                                    <p>Please select size of pizza to:</p>
-                                    
-                                        <select id="sizes" name="PizaSizes">
-                                            <option value="Small">Small -- 800</option>
-                                            <option value="Medium">Medium -- 1000</option>
-                                            <option value="Large">Large -- 1500</option>
-                                            
-                                        </select>
-                                </div>
-                                <div class="crust">   
-                                    <p>Please select Crust on your pizza:</p>
-                                    
-                                        <select id="crusts" name="Crust">
-                                            <option value="Crispy">Crispy -- 150</option>
-                                            <option value="Stuffed">Stuffed -- 100</option>
-                                            <option value="Glutten-free">Glutten-free -- 200</option>                                  
-                                        </select>
-                                </div>
-                                <div class="topping">
-                                    <p>Please select toppings on your Pizza:</p>
-                                    
-                                        <input type="checkbox" id="TOMATO" name="tomato" value="Tomato">
-                                        <label for="tomatos">Tomato</label><br>
-                                        <input type="checkbox" id="cheese" name="CHEESE" value="Cheese">
-                                        <label for="cheese"> Cheese/Mozerella Cheese</label><br>
-                                        <input type="checkbox" id="chicken" name="Chicken" value="Ham">
-                                        <label for="HAM">Chicken / Ham</label><br>
-                                </div> <br>
-                        <div class="amount">
-                            <p>Select the number of pizzas to be delivers</p>
-                            <input type="number" id="Pizza" name="pizzas" min="1" max="100">
-                        </div>
-                        
-                        <div><br><br>
-                            <div class="buttons align-content-center jusify-content-center">
-                                <input type="submit" class="btn btn-danger"id="button" onclick="getConfirmation()" value="Order">
-                                <input type="submit" class="btn btn-danger"id="checkout" value="Checkout">
-                                <input type="submit" class="btn btn-danger"id="button" onclick="Deliver();" value="Deliver">
+<div id="meals" class="visit align-content-center justify-content-center">
+    <h3>Plan your meal visit</h3>
+        <div>
+            <section id="pizza_pricing">
+                <div class="container-fluid">
+                    <div class="pizzas">
+                    <h2 id="pizzaIntro"></h2>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card" id="pizza01">
+                            <img class="card-img-top" src="Images/aboutImgs/WhatWLov_1.jpg" alt="pizza03">
+                            <div class="card-body">
+                            <div class="alert alert-success  msucess-alert" role="alert" id="pizza01alert">
+                                <h5><strong>Added to basket &#128717; </strong></h5>
                             </div>
-    
-                          </div>
-                        </div>  
-                </form>
-                </div>
-
-                <div class="container">
-                    <h4 id="pics">Gallery</h4>
-                <div class="card-deck">
-                    <div class="card">
-                        <img src="./Images/footer/footer_1.jpg" id="img" class="img-fluid" alt="">
-                    </div>
-                <div class="card">
-                <img src="./Images/footer/footer_2.jpg" id="img" class="img-fluid" alt="">
-                </div>
-                <div class="card">
-                <img src="./Images/footer/footer_3.jpg" id="img" class="img-fluid" alt="">
-                    <div class="describe">
-                    </div>           
-                </div>
-                <div class="card">
-                <img src="./Images/footer/footer_4.jpg" id="img" class="img-fluid" alt="">
-                </div>
-                <div class="card">
-                <img src="./Images/footer/footer_5.jpg" id="img" class="img-fluid" alt="">
-                </div>
-                
-                </p><br>         
-                </div>
-
-        <div class="card-deck mt-20">
-            <div class="card">
-                <img src="./Images/footer/footer_6.jpg" id="img" class="img-fluid" alt="">
-            </div>
-            <div class="card">
-                <img src="./Images/footer/footer_7.jpg" id="img" class="img-fluid" alt="">
+                            <h5 class="card-title"><span id="pizza01name">Cheese Pizza </span><span
+                                class="badge badge-warning float-right">KSH
+                                <span id="pizza01price" class="pprice">1000</span></span></h5>
+                            <p class="card-text">
+                                <div class="row">
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge01">1</span>Size</strong></h5>
+                                    <select class="form-control badge-title pizza01" id="pizza-size" required>
+                                    <option value="">Select Size</option>
+                                    <option value="Small">Small</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Large">Large</option>
+                                    </select>
+            
+                                </div>
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge01">2</span>Crust</strong></h5>
+                                    <select class="form-control badge-title pizza01" id="pizza-crust">
+                                    <option selected>Select Crust</option>
+                                    <option>Crispy</option>
+                                    <option>Stuffed</option>
+                                    <option>Glutter free</option>
+                                    </select>
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge01">3</span>Topping</strong></h5>
+                                    <select class="form-control badge-title pizza01" id="pizza-topping">
+                                    <option selected>Select Topping</option>
+                                    <option>Pepperoni</option>
+                                    <option>Onion</option>
+                                    <option>Bacon</option>
+                                    </select>
+                                </div>
+            
+                                </div>
+                            </p>
+                            <button class="btn btn-warning float-right pizzabtn" id="btnpizza01">Add to Basket</button>
+                            <button class="btn float-left view-basket" id="view01">View Basket</button>
+                            </div>
                         </div>
-            <div class="card">
-                <img src="./Images/footer/footer_8.jpg" id="img" class="img-fluid" alt="">
-            </div>
-            <div class="card">
-                <img src="./Images/footer/footer_4.jpg" id="img" class="img-fluid" alt="">
-            </div>
-            <div class="card">
-                <img src="./Images/footer/footer_5.jpg" id="img" class="img-fluid" alt="">
-                   
-            </div>
-                                
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card" id="pizza02">
+                            <img class="card-img-top" src="Images/background/backg.jpg" alt="pizza04">
+                            <div class="card-body">
+                            <div class="alert alert-success  msucess-alert" role="alert" id="pizza02alert">
+                                <h5><strong>Added to basket &#128717; </strong></h5>
+                            </div>
+                            <h5 class="card-title"><span id="pizza02name">Veggie Pizza</span><span
+                                class="badge badge-warning float-right">KSH
+                                <span id="pizza02price" class="pprice">1000</span></span></h5>
+                            <p class="card-text">
+                                <div class="row">
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge02">1</span>Size</strong></h5>
+                                    <select class="form-control badge-title pizza02" id="pizza-size">
+                                    <option selected>Select Size</option>
+                                    <option>Small</option>
+                                    <option>Medium</option>
+                                    <option>Large</option>
+                                    </select>
+            
+                                </div>
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge02">2</span>Crust</strong></h5>
+                                    <select class="form-control badge-title pizza02" id="pizza-crust">
+                                    <option selected>Select Crust</option>
+                                    <option>Crispy</option>
+                                    <option>Stuffed</option>
+                                    <option>Glutter free</option>
+                                    </select>
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge02">3</span>Topping</strong></h5>
+                                    <select class="form-control badge-title pizza02" id="pizza-topping">
+                                    <option selected>Select Topping</option>
+                                    <option>Pepperoni</option>
+                                    <option>Onion</option>
+                                    <option>Bacon</option>
+                                    </select>
+                                </div>
+            
+                                </div>
+                            </p>
+                            <button class="btn btn-warning float-right pizzabtn" id="btnpizza02">Add to Basket</button>
+                            <button class="btn float-left view-basket" id="view02">View Basket</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card" id="pizza03">
+                            <img class="card-img-top" src="Images/aboutImgs/WhatWLov_3.jpg" alt="baked-chilli-jacket-potatoes">
+                            <div class="card-body">
+                            <div class="alert alert-success  msucess-alert" role="alert" id="pizza03alert">
+                                <h5><strong>Added to basket &#128717; </strong></h5>
+                            </div>
+                            <h5 class="card-title"><span id="pizza03name">Meat Pizza</span><span
+                                class="badge badge-warning float-right">KSH
+                                <span id="pizza03price" class="pprice">1000</span></span></h5>
+                            <p class="card-text">
+                                <div class="row">
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge03">1</span>Size</strong></h5>
+                                    <select class="form-control badge-title pizza03" id="pizza-size">
+                                    <option selected>Select Size</option>
+                                    <option>Small</option>
+                                    <option>Medium</option>
+                                    <option>Large</option>
+                                    </select>
+            
+                                </div>
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge03">2</span>Crust</strong></h5>
+                                    <select class="form-control badge-title pizza03" id="pizza-crust">
+                                    <option selected>Select Crust</option>
+                                    <option>Crispy</option>
+                                    <option>Stuffed</option>
+                                    <option>Glutter free</option>
+                                    </select>
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge03">3</span>Topping</strong></h5>
+                                    <select class="form-control badge-title pizza03" id="pizza-topping">
+                                    <option selected>Select Topping</option>
+                                    <option>Pepperoni</option>
+                                    <option>Onion</option>
+                                    <option>Bacon</option>
+                                    </select>
+                                </div>
+            
+                                </div>
+                            </p>
+                            <button class="btn btn-warning float-right pizzabtn" id="btnpizza03">Add to Basket</button>
+                            <button class="btn float-left view-basket" id="view03">View Basket</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card" id="pizza04">
+                            <img class="card-img-top" src="Images/aboutImgs/WhatWLov_4.jpg" alt="baked-chilli-jacket-potatoes">
+                            <div class="card-body">
+                            <div class="alert alert-success  msucess-alert" role="alert" id="pizza04alert">
+                                <h5><strong>Added to basket &#128717; </strong></h5>
+                            </div>
+                            <h5 class="card-title"><span id="pizza04name">California Pizza</span><span
+                                class="badge badge-warning float-right">KSH
+                                <span id="pizza04price" class="pprice">1000</span></span></h5>
+                            <p class="card-text">
+                                <div class="row">
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge04">1</span>Size</strong></h5>
+                                    <select class="form-control badge-title pizza04" id="pizza-size">
+                                    <option selected>Select Size</option>
+                                    <option>Small</option>
+                                    <option>Medium</option>
+                                    <option>Large</option>
+                                    </select>
+            
+                                </div>
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge04">2</span>Crust</strong></h5>
+                                    <select class="form-control badge-title pizza04" id="pizza-crust">
+                                    <option selected>Select Crust</option>
+                                    <option>Crispy</option>
+                                    <option>Stuffed</option>
+                                    <option>Glutter free</option>
+                                    </select>
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge04">3</span>Topping</strong></h5>
+                                    <select class="form-control badge-title pizza04" id="pizza-topping">
+                                    <option selected>Select Topping</option>
+                                    <option>Pepperoni</option>
+                                    <option>Onion</option>
+                                    <option>Bacon</option>
+                                    </select>
+                                </div>
+            
+                                </div>
+                            </p>
+                            <button class="btn btn-warning float-right pizzabtn" id="btnpizza04">Add to Basket</button>
+                            <button class="btn float-left view-basket" id="view04">View Basket</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card" id="pizza05">
+                            <img class="card-img-top" src="Images/aboutImgs/WhatWLov_5.jpg" alt="baked-chilli-jacket-potatoes">
+                            <div class="card-body">
+                            <div class="alert alert-success  msucess-alert" role="alert" id="pizza05alert">
+                                <h5><strong>Added to basket &#128717; </strong></h5>
+                            </div>
+                            <h5 class="card-title"><span id="pizza05name">Margherita Pizza</span><span
+                                class="badge badge-warning float-right">KSH
+                                <span id="pizza05price" class="pprice">1000</span></span></h5>
+                            <p class="card-text">
+                                <div class="row">
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge05">1</span>Size</strong></h5>
+                                    <select class="form-control badge-title pizza05" id="pizza-size">
+                                    <option selected>Select Size</option>
+                                    <option>Small</option>
+                                    <option>Medium</option>
+                                    <option>Large</option>
+                                    </select>
+            
+                                </div>
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge05">2</span>Crust</strong></h5>
+                                    <select class="form-control badge-title pizza05" id="pizza-crust">
+                                    <option selected>Select Crust</option>
+                                    <option>Crispy</option>
+                                    <option>Stuffed</option>
+                                    <option>Glutter free</option>
+                                    </select>
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge05">3</span>Topping</strong></h5>
+                                    <select class="form-control badge-title pizza05" id="pizza-topping">
+                                    <option selected>Select Topping</option>
+                                    <option>Pepperoni</option>
+                                    <option>Onion</option>
+                                    <option>Bacon</option>
+                                    </select>
+                                </div>
+            
+                                </div>
+                            </p>
+                            <button class="btn btn-warning float-right pizzabtn" id="btnpizza05">Add to Basket</button>
+                            <button class="btn float-left view-basket" id="view05">View Basket</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card" id="pizza06">
+                            <img class="card-img-top" src="Images/aboutImgs/WhatWLov_6.jpg" alt="baked-chilli-jacket-potatoes">
+                            <div class="card-body">
+                            <div class="alert alert-success  msucess-alert" role="alert" id="pizza06alert">
+                                <h5><strong>Added to basket &#128717; </strong></h5>
+                            </div>
+                            <h5 class="card-title"><span id="pizza06name">BBQ Chicken Pizza</span><span
+                                class="badge badge-warning float-right">KSH
+                                <span id="pizza06price" class="pprice">1000</span></span></h5>
+                            <p class="card-text">
+                                <div class="row">
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge06">1</span>Size</strong>
+                                    </h5>
+                                    <select class="form-control badge-title pizza06" id="pizza-size">
+                                    <option selected>Select Size</option>
+                                    <option>Small</option>
+                                    <option>Medium</option>
+                                    <option>Large</option>
+                                    </select>
+            
+                                </div>
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge06">2</span>Crust</strong>
+                                    </h5>
+                                    <select class="form-control badge-title pizza06" id="pizza-crust">
+                                    <option selected>Select Crust</option>
+                                    <option>Crispy</option>
+                                    <option>Stuffed</option>
+                                    <option>Glutter free</option>
+                                    </select>
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge06">3</span>Topping</strong></h5>
+                                    <select class="form-control badge-title pizza06" id="pizza-topping">
+                                    <option selected>Select Topping</option>
+                                    <option>Pepperoni</option>
+                                    <option>Onion</option>
+                                    <option>Bacon</option>
+                                    </select>
+                                </div>
+            
+                                </div>
+                            </p>
+                            <button class="btn btn-warning pizzabtn float-right" id="btnpizza06">Add to Basket</button>
+                            <button class="btn float-left view-basket" id="view06">View Basket</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card" id="pizza07">
+                            <img class="card-img-top" src="Images/aboutImgs/WhatWLov_7.jpg" alt="baked-chilli-jacket-potatoes">
+                            <div class="card-body">
+                            <div class="alert alert-success  msucess-alert" role="alert" id="pizza07alert">
+                                <h5><strong>Added to basket &#128717; </strong></h5>
+                            </div>
+                            <h5 class="card-title"><span id="pizza07name">Hawaiian Pizza</span><span
+                                class="badge badge-warning float-right">KSH
+                                <span id="pizza07price" class="pprice">1000</span></span></h5>
+                            <p class="card-text">
+                                <div class="row">
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge07">1</span>Size</strong></h5>
+                                    <select class="form-control badge-title pizza07" id="pizza-size">
+                                    <option selected>Select Size</option>
+                                    <option>Small</option>
+                                    <option>Medium</option>
+                                    <option>Large</option>
+                                    </select>
+            
+                                </div>
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge07">2</span>Crust</strong></h5>
+                                    <select class="form-control badge-title pizza07" id="pizza-crust">
+                                    <option selected>Select Crust</option>
+                                    <option>Crispy</option>
+                                    <option>Stuffed</option>
+                                    <option>Glutter free</option>
+                                    </select>
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge07">3</span>Topping</strong></h5>
+                                    <select class="form-control badge-title pizza07" id="pizza-topping">
+                                    <option selected>Select Topping</option>
+                                    <option>Pepperoni</option>
+                                    <option>Onion</option>
+                                    <option>Bacon</option>
+                                    </select>
+                                </div>
+            
+                                </div>
+                            </p>
+                            <button class="btn btn-warning float-right pizzabtn" id="btnpizza07">Add to Basket</button>
+                            <button class="btn float-left view-basket" id="view07">View Basket</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card" id="pizza08">
+                            <img class="card-img-top" src="Images/background/backg.jpg" alt="baked-chilli-jacket-potatoes">
+                            <div class="card-body">
+                            <div class="alert alert-success  msucess-alert" role="alert" id="pizza08alert">
+                                <h5><strong>Added to basket &#128717; </strong></h5>
+                            </div>
+                            <h5 class="card-title"><span id="pizza08name">Buffalo Pizza</span><span
+                                class="badge badge-warning float-right">KSH
+                                <span id="pizza08price" class="pprice">1000</span></span></h5>
+                            <p class="card-text">
+                                <div class="row">
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge08">1</span>Size</strong></h5>
+                                    <select class="form-control badge-title pizza08" id="pizza-size">
+                                        <option selected>Select Size</option>
+                                        <option>Small</option>
+                                        <option>Medium</option>
+                                        <option>Large</option>
+                                    </select>
+            
+                                </div>
+                                <div class="col-6">
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge08">2</span>Crust</strong></h5>
+                                    <select class="form-control badge-title pizza08" id="pizza-crust">
+                                        <option selected>Select Crust</option>
+                                        <option>Crispy</option>
+                                        <option>Stuffed</option>
+                                        <option>Glutter free</option>
+                                    </select>
+                                    <h5 id="select-heading"><strong><span
+                                        class="badge badge-pill badge-warning mbadge badge08">3</span>Topping</strong></h5>
+                                    <select class="form-control badge-title pizza08" id="pizza-topping">
+                                    <option selected>Select Topping</option>
+                                    <option>Pepperoni</option>
+                                    <option>Onion</option>
+                                    <option>Bacon</option>
+                                    </select>
+                                </div>
+            
+                                </div>
+                            </p>
+                            <button class="btn btn-warning float-right pizzabtn" id="btnpizza08">Add to Basket</button>
+                            <button class="btn float-left view-basket" id="view08">View Basket</button>
+                            </div>
+                        </div>
+                        </div>
+            
                     </div>
+                    </div>
+                </div>
+                </section>
+                <section id="pizza_basket">
+                <div class=" jumbotron container">
+                    <div class="deliveyChoice">
+                    <h2 class="text-danger">Hi, Would you like us to deliver your order?</h2>
+                    <div class="form-check">
+                        <input class="form-check-input big" type="radio" name="choice" value="yes">
+                        <label for="yes">Yes, Please &#128521;</label><br>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input big" type="radio" name="choice" value="no">
+                        <label for="no">No, Thank You &#128524;</label>
+                    </div>
+                    </div>
+                    <div class="alert alert-info" role="alert" id="note">
+                    <h5>
+                        Your Order will be delivered to <span id="note-text"></span>.
+                    </h5>
+                    </div>
+                    <div class="alert alert-danger" role="alert" id="ifDelivered">
+                    <h5>
+                        You will be charged <strong>Ksh. 200.00 </strong>for Delivery.
+                    </h5>
+                    </div>
+            
+                    <br>
+            
+                    <div class="basket">
+                    <h2 class="text-primary">Your Basket</h2>
+                    </div>
+            
+                    <table class="table table-responsive  table-hover table-striped">
+                    <thead>
+                        <tr>
+                        <th>#</th>
+                        <th scope= "col">Pizza Name</th>
+                        <th scope= "col">Size</th>
+                        <th scope= "col">Crust</th>
+                        <th scope= "col">Topping(s)</th>
+                        <th scope= "col">Qnty</th>
+                        <th scope= "col">Total Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-row">
+                        <tr id="dev">
+                        <th scope="row">Delivery Cost</th>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td><strong><span id="delcost">150.00</span></strong></td>
+                        </tr>
+                    </tbody>
+                    </table> 
+                    <div class="cBtns w-auto">
+                    <button class="btn btn-lg btn-warning " id="backspace">I WANT MORE</button>
+                    <button class="btn btn-lg btn-success " id="checkout">CHECKOUT</button>
+                    </div>
+                </div>
+            
+            
+                </section>
+                <div class="container method">
+                <div class="jumbotron">
+                    <h1>Select Checkout Method</h1>
+            
+                    <div class="payments">
+                    <img src="assets/mpesa.png" alt="">
+                    <img src="assets/visa.png" alt="" id="visa">
+                    </div>
+                </div>
+                </div>
+                    
+        </div>
                     <!-- google map location -->
-                    <div class="map d-flex justify-content-center align-content-center">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3988.8206717074563!2d37.27880001451235!3d-1.2813238990654436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e1!4m0!4m5!1s0x182f62172c7e2321%3A0x6b8cb5f5e8dfefce!2sNguluni%20shopping%20center%2C%20Nguluni!3m2!1d-1.2813238999999998!2d37.2809887!5e0!3m2!1sen!2ske!4v1596226356195!5m2!1sen!2ske" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-                    <!-- social media -->
-                    <div class="social-media d-flex align-content-center justify-content-center">
-
-                        <a href="#"><img src="Images/social_icons/behance.png" alt=""></a>
-                        <a href="#"><img src="Images/social_icons/dribble.png" alt=""></a>
-                        <a href="#"><img src="Images/social_icons/facebook.png" alt=""></a>
-                        <a href="#"><img src="Images/social_icons/flickr.png" alt=""></a>
-                        <a href="#"><img src="Images/social_icons/g_plus.png" alt=""></a>
-                        <a href="#"><img src="Images/social_icons/pinterest.png" alt=""></a>
-                        <a href="#"><img src="Images/social_icons/skype.png" alt=""></a>
-                        <a href="#"><img src="Images/social_icons/stumble_upon.png" alt=""></a>
-                        <a href="#"><img src="Images/social_icons/twitter.png" alt=""></a>
-                        <a href="#"><img src="Images/social_icons/you_tube.png" alt=""></a>
-                        
-                    </div>
-
-                    </div>
+            <div class="map d-flex justify-content-center align-content-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3988.8206717074563!2d37.27880001451235!3d-1.2813238990654436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e1!4m0!4m5!1s0x182f62172c7e2321%3A0x6b8cb5f5e8dfefce!2sNguluni%20shopping%20center%2C%20Nguluni!3m2!1d-1.2813238999999998!2d37.2809887!5e0!3m2!1sen!2ske!4v1596226356195!5m2!1sen!2ske" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
+            <!-- social media -->
+            <div class="social-media d-flex align-content-center justify-content-center">
+
+                <a href="#"><img src="Images/social_icons/behance.png" alt=""></a>
+                <a href="#"><img src="Images/social_icons/dribble.png" alt=""></a>
+                <a href="#"><img src="Images/social_icons/facebook.png" alt=""></a>
+                <a href="#"><img src="Images/social_icons/flickr.png" alt=""></a>
+                <a href="#"><img src="Images/social_icons/g_plus.png" alt=""></a>
+                <a href="#"><img src="Images/social_icons/pinterest.png" alt=""></a>
+                <a href="#"><img src="Images/social_icons/skype.png" alt=""></a>
+                <a href="#"><img src="Images/social_icons/stumble_upon.png" alt=""></a>
+                <a href="#"><img src="Images/social_icons/twitter.png" alt=""></a>
+                <a href="#"><img src="Images/social_icons/you_tube.png" alt=""></a>
+                
+            </div>
+
+            </div>
+    </div>
 
         </div>
     <!-- Optional JavaScript -->
